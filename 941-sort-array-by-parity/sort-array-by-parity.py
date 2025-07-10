@@ -4,14 +4,22 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        for i in range(len(nums)):
-            if nums[i] % 2 == 0:
-                continue
-            for j in range(i + 1, len(nums)):
-            
-                if nums[j] % 2 == 0:
-                    temp = nums[i]
-                    nums[i] = nums[j]
-                    nums[j] = temp
-                    break
+        p1=0
+        p2=len(nums)-1
+        print(p2)
+        while p1<p2:
+            if nums[p1]%2==1:
+                if nums[p2]%2==0:
+                 temp=nums[p1]
+                 nums[p1]=nums[p2]
+                 nums[p2]=temp
+                 p2-=1
+                 p1+=1
+                else:
+                    p2-=1
+                
+            else:
+                p1+=1
+
+
         return nums
