@@ -6,7 +6,6 @@ class Solution(object):
         """
         max=0
         nums= sorted(nums)
-        print(nums)
         if len(nums)<2:
             return 0
         for i  in range(1,len(nums)):
