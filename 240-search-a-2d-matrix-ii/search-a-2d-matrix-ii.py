@@ -7,8 +7,8 @@ class Solution(object):
         """
         
         for i in range(0,len(matrix)):
-            for j in range(0,len(matrix[0])):
-                if matrix[i][j]>target:
+            for j in range(len(matrix[0])-1,-1,-1):
+                if matrix[i][j]<target:
                     break
                 elif matrix[i][j]==target:
                     return True
