@@ -7,7 +7,7 @@ class Solution(object):
         """
         for i in range(len(s)):
             v=s[i+1:]+s[:i+1]
-            print(v)
+            
             if v==goal:
               return True
         return False      
