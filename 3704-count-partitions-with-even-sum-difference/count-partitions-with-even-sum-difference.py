@@ -12,7 +12,6 @@ class Solution(object):
         for i in range(0,len(nums)-1):
             fs+=nums[i]
             ws-=nums[i]
-            print(fs,ws)
             if (fs-ws)%2 ==0:
                 c+=1
 
